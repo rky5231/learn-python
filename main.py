@@ -17,12 +17,5 @@
 
 
 
-<<<<<<< HEAD
-string = "1anjit"
-
-import re
-=======
-
->>>>>>> 381aaa9 (Initial commit)
 
 

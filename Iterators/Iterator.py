@@ -1,6 +1,6 @@
-class RemoteControl:
+class RemoteControl():
     def __init__(self):
-        self.channels = ["StarSports", "Sony", "Espn", "Max", "DD National"]
+        self.channels = ["HBO", "cnn", "abc", "espn"]
         self.index = -1
 
     def __iter__(self):
@@ -10,17 +10,14 @@ class RemoteControl:
         self.index += 1
         if self.index == len(self.channels):
             raise StopIteration
+
         return self.channels[self.index]
 
 
-remote = RemoteControl()
-channel = iter(remote)
-print(channel.__next__())
-print(channel.__next__())
-print(channel.__next__())
-print(channel.__next__())
-print(channel.__next__())
-print(channel.__next__())
-
-
-
+r = RemoteControl()
+itr = iter(r)
+print(next(itr))
+print(next(itr))
+print(next(itr))
+print(next(itr))
+print(next(itr))
