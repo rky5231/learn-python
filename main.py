@@ -10,9 +10,7 @@
 #         print(self.name)
 #
 #
-# id = 1
-# name = 'tcs'
-# emp1 = Employee(1, "Tcs")
+
 # emp2 = Employee(5, "digital")
 
 
